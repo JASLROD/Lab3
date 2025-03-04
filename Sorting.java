@@ -31,38 +31,46 @@ public class Sorting
         ////Look for when n1 is smallest section
         if ((n1<= n2) && (n1<= n3)){ 
             low = n1;
-            if (n2 <= n3);
-            med = n2;
-            high = n3;}
-        {
-            else
-            med = n3;
-            high = n2;
-        }
+            if (n2 <= n3){
+                med = n2;
+                high = n3;}
 
+            else{
+                med = n3;
+                high = n2;
+            }
+        }
         //if true n2 is ?, n3 is ?
         //else n2 is ?, n3 is ?
-    }
 
-    ////Above n1 is smallest, now we need to figure out when n2 is smallest section
-    else if (n2<=n3); { 
-        low = n2;
-        else (n1>=n3)
-        high = n1;
-        med = n3;
-    }
+        ////Above n1 is smallest, now we need to figure out when n2 is smallest section
+        else if (n2<=n3) { 
+            low = n2;
+            if (n1>=n3){
+                high = n3;
+                med = n1;
+            }
+            else { 
+                med = n3;
+                high = n1;
+            } 
 
-    else { ////n3 is smallest
-        low = n3;
-        if ( n1 <= n2)
-            else 
-        high = n1;
-        med = n2;}
-    //figure out if n1 is smaller or equal to n2, 
-    //if true n1 is ?, n2 is ?
-    //else n1 is ?, n2 is ?
-}
-System.out.println("The inputs sorted smallest to largest are: " low + " " + med + " " + high);
+        }
 
-}////end main
+        else { 
+            low = n3;
+            if ( n1 <= n2){ 
+                high = n2;
+                med = n1;}
+            else {
+                high = n1;
+                med = n2;
+            }
+            //figure out if n1 is smaller or equal to n2, 
+            //if true n1 is ?, n2 is ?
+            //else n1 is ?, n2 is ?
+        }
+        System.out.println("The inputs sorted smallest to largest are: "+ low + " " + med + " " + high);
+
+    }////end main
 }////end class
