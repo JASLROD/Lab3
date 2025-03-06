@@ -47,12 +47,12 @@ public class Sorting
         else if (n2<=n3) { 
             low = n2;
             if (n1>=n3){
-                high = n3;
-                med = n1;
+                high = n1;
+                med = n3;
             }
             else { 
-                med = n3;
-                high = n1;
+                med = n1;
+                high = n3;
             } 
 
         }
@@ -66,9 +66,7 @@ public class Sorting
                 high = n1;
                 med = n2;
             }
-            //figure out if n1 is smaller or equal to n2, 
-            //if true n1 is ?, n2 is ?
-            //else n1 is ?, n2 is ?
+
         }
         System.out.println("The inputs sorted smallest to largest are: "+ low + " " + med + " " + high);
 

@@ -1,0 +1,12 @@
+ Enter 1st number 3
+ Enter 2nd number 2
+ Enter 3rd number 1
+The inputs sorted smallest to largest are: 1 2 3
+ Enter 1st number 2
+ Enter 2nd number 3
+ Enter 3rd number 1
+The inputs sorted smallest to largest are: 1 2 3
+ Enter 1st number 1
+ Enter 2nd number 3
+ Enter 3rd number 2
+The inputs sorted smallest to largest are: 1 2 3
